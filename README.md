@@ -52,6 +52,11 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 FLUSH PRIVILEGES;
 ```
 
+new user
+```sql
+CREATE USER 'devanox'@'localhost' IDENTIFIED WITH caching_sha2_password BY '***';GRANT ALL PRIVILEGES ON *.* TO 'devanox'@'localhost' WITH GRANT OPTION;ALTER USER 'devanox'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;GRANT ALL PRIVILEGES ON `devanox\_%`.* TO 'devanox'@'localhost';
+```
+
 Exit from mysql prompt
 
 ```sql
